@@ -20,8 +20,10 @@ export default function Header({label, name="Auth", logo}: HeaderProps) {
                 "text-3xl text-semibold", font.className
             )}>
                 {logo ? (
-                    <div className={"flex gap-y-6 justify-between"}>
-                        <Image src={logo} alt={"Logo"} height={32} width={32} />
+                    <div className={"flex gap-y-6 justify-between items-center"}>
+                        <div className={"mr-2 h-16 w-16"}>
+                            <Image src={logo} alt={"Logo"} height={360} width={360} />
+                        </div>
                         {name}
                     </div>
                 )
